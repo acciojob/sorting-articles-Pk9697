@@ -1,6 +1,6 @@
 //your JS code here. If required.
 const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
-const band=document.getElementById('band')
+const bandsUl=document.getElementById('bands')
 
 const listItems=bands.sort((a,b)=>{
 	a=a.toLowerCase()
@@ -23,7 +23,7 @@ const listItems=bands.sort((a,b)=>{
 
 console.log(listItems)
 
-band.innerHTML=`
+bandsUl.innerHTML=`
 	<ul>
 		${listItems}
 	</ul>
